@@ -1,0 +1,31 @@
+<!--1、修改了ionic-tab中的title属性-->
+<!--2、修改了Ion-nav-view组件中的name属性-->
+<!--3、修改了ion-tab中的href属性-->
+<!--4、修改了tab上的图标-->
+
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="首页" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="分类" icon-off="ion-ios-list-outline" icon-on="ion-ios-list" href="#/tab/category">
+    <ion-nav-view name="tab-category"></ion-nav-view>
+    <!--<div ui-view="tab-category"></div>-->
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="购物车" icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart" href="#/cart" badge="obj_cartCount.count" badge-style="badge-assertive">
+    <ion-nav-view name="tab-cart"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="我的" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>
+
